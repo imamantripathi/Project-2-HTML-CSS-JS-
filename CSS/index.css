@@ -32,13 +32,13 @@
     "Lucida Sans", Arial, sans-serif;
   display: none;
 }
-@media only screen and (max-width:768px){
-  .popup{
+@media only screen and (max-width: 768px) {
+  .popup {
     width: 60%;
   }
 }
-@media only screen and (max-width:480px){
-  .popup{
+@media only screen and (max-width: 480px) {
+  .popup {
     width: 90%;
   }
 }
@@ -57,9 +57,9 @@
   text-align: center;
   margin: 20px 0;
 }
-.popup h2{
+.popup h2 {
   text-align: center;
-  font-size:40px;
+  font-size: 40px;
 }
 .popup a {
   display: block;
@@ -73,8 +73,8 @@
   text-decoration: none;
   padding: 5px 2px;
 }
-.popup a:hover{
-  background-color:#ffffff;
+.popup a:hover {
+  background-color: #ffffff;
   color: rgba(0, 0, 0, 0.7);
   transition: all 0.54s ease-in-out;
 }
@@ -247,6 +247,79 @@ textarea {
   font-size: 20px;
   font-weight: bold;
 }
+footer {
+  display: flex;
+  flex-direction: row;
+}
+.left-footer {
+  text-align: left;
+  padding-left: 20px;
+}
+.center-footer {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.right-footer {
+  text-align: right;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 750px) {
+  footer {
+    flex-direction: column;
+  }
+  .right-footer,
+  .left-footer {
+    text-align: center;
+    padding: 0%;
+  }
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  /* text-align: center; */
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  /* background: #3B5998; */
+  color: black;
+}
+
+/* Twitter */
+.fa-twitter {
+  /* background: #55ACEE; */
+  color: lightskyblue;
+}
+.fa-github {
+  /* background: #55ACEE; */
+  color: black;
+}
+.fa-instagram {
+  color: red;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-telegram {
+  color: lightskyblue;
+}
+.fa-linkedin {
+  color: rgb(6, 135, 255);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -265,6 +338,64 @@ html {
 }
 .section {
   padding: 20px;
+}
+.about-section {
+  /* background:rgba(0, 0, 0, 0.7); */
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+.about-heading {
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 5px red;
+  font-size: 50px;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img {
+  width: 50%;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+.about-img img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  border-radius: 50px;
+  justify-content: center;
+}
+.about-text {
+  padding-bottom: 50px;
+  justify-content: center;
+  width: 50%;
+  font-size: 30px;
+  text-align: left;
+  padding-right: 200px;
+}
+@media only screen and (max-width: 1140px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-img {
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .about-img img {
+    width: 80%;
+    border-radius: 100px;
+  }
+  .about-text {
+    padding: 0%;
+    margin: 0%;
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 @media only screen and (max-width: 1140px) {
   .nav-list {

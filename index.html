@@ -4,6 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code With Aman</title>
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -42,7 +47,7 @@
     <nav class="navbar background h-nav">
       <ul class="nav-list v-class">
         <div class="logo">
-          <img src="Media/Code With Aman.png" alt="Logo" />
+          <img src="Media/Code With Aman.png"  onclick="location.reload('index.html');" alt="Logo" />
         </div>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -150,7 +155,7 @@
       </div>
     </section>
     <!-- contact us -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="text-center">Contact Us</h2>
       <div class="form">
         <input type="text" placeholder="Enter Your Name" />
@@ -166,8 +171,40 @@
         <button type="submit" class="btn btn-dark">Summit</button>
       </div>
     </section>
-    <footer id="contact">
-      <p class="text-footer">Copyright &copy 2022-All rights reserved</p>
+    <section class="about-section" id="about">
+      <h1 class="about-heading">About us</h1>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="Media/Profile.png" alt="Profile" />
+        </div>
+        <div class="about-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id veritatis
+          repellendus molestias quia magni. Iusto consequatur corporis veritatis
+          nesciunt cum? Tenetur accusamus est reprehenderit amet minima nemo
+          quae numquto blanditiis.
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="left-footer">
+        <a href="https://instagram.com/aman.css" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/Imamantripathi1" class="fa fa-twitter"></a>
+        <a href="https://github.com/imamantripathi" class="fa fa-github"></a>
+      </div>
+      <div class="center-footer">
+        <p class="text-footer">Copyright &copy 2022-All rights reserved</p>
+      </div>
+      <div class="right-footer">
+        <a
+          href="https://www.youtube.com/channel/UCofq8EtApqK2c6iejcN3uQg"
+          class="fa fa-youtube"
+        ></a>
+        <a href="https://t.me/imamantripathi" class="fa fa-telegram"></a>
+        <a
+          href="https://www.linkedin.com/in/imamantripathi/"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
     </footer>
     <script src="JS/index.js"></script>
   </body>
