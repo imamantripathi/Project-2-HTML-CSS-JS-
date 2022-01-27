@@ -4,11 +4,82 @@
   margin: 0;
 }
 .background {
-    background: rgba(0, 0, 0, 0.7) url("/Media/codewithaman_bg.png");
-    background-size: cover;
-    background-blend-mode: darken;
-    /* background: black; */
+  background: rgba(0, 0, 0, 0.7) url(/Media/codewithaman_bg.png);
+  background-size: cover;
+  background-blend-mode: darken;
+  /* background: black; */
+}
+
+/* Pop Section Started here  */
+*,
+*:after,
+*:before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.popup {
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  width: 35%;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: none;
+}
+@media only screen and (max-width:768px){
+  .popup{
+    width: 60%;
   }
+}
+@media only screen and (max-width:480px){
+  .popup{
+    width: 90%;
+  }
+}
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.popup p {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+.popup h2{
+  text-align: center;
+  font-size:40px;
+}
+.popup a {
+  display: block;
+  width: 30%;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 2px;
+}
+.popup a:hover{
+  background-color:#ffffff;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.54s ease-in-out;
+}
+/*  Popup Section ended */
+
 .logo {
   width: 20%;
   display: flex;
@@ -167,88 +238,86 @@ textarea {
   display: block;
   margin: auto;
 }
-.text-footer{
-    text-align: center;
-    padding: 30px 0;
-    font-family: "Source Serif 4", sans-serif;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
+.text-footer {
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Source Serif 4", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-.burger{
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 15px;
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
 }
-.line{
-    width: 33px;
-    background-color:white;
-    height: 4px;
-    margin: 5px 3px;
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
 }
-.section{
-    padding: 20px;
+.section {
+  padding: 20px;
 }
-@media only screen and (max-width:1140px){
-    .nav-list{
-        flex-direction: column;
-        /* background: #000; */
-    }
-    .navbar{
-        height: 447px;
-        flex-direction: column;
-        transition: all 0.7s ease-out;
-    }
-    .box-main{
-        height:auto;
-        flex-direction: column-reverse;
-        width: 100%;
-        
-      /* padding:0; */
+@media only screen and (max-width: 1140px) {
+  .nav-list {
+    flex-direction: column;
+    /* background: #000; */
+  }
+  .navbar {
+    height: 447px;
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+  }
+  .box-main {
+    height: auto;
+    flex-direction: column-reverse;
+    width: 100%;
 
-    }
-    .firstSection{
-       margin: 0;
-    }
-    .rightNav{
-        text-align: center;
-    }
-    #search{
-        width: 100%;
-    }
-    .burger{
-        display: block;
-    }
-    .h-nav{
-        height: 72px;
-    }
-    .v-class{
-        opacity: 0;
-    }
-    
-    .section{
-        flex-direction: column-reverse;
-        
-    }
-    .text-small{
-        text-align: center;
-    }
-    .buttons{
-        text-align: center;
-    }
-    .text-big{
-        text-align: center;
-    }
-    .section{
-        padding: 0;
-    }
-    .paras{
-        padding: 0;
-    }
+    /* padding:0; */
+  }
+  .firstSection {
+    margin: 0;
+  }
+  .rightNav {
+    text-align: center;
+  }
+  #search {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav {
+    height: 72px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+  }
+  .text-small {
+    text-align: center;
+  }
+  .buttons {
+    text-align: center;
+  }
+  .text-big {
+    text-align: center;
+  }
+  .section {
+    padding: 0;
+  }
+  .paras {
+    padding: 0;
+  }
 }
